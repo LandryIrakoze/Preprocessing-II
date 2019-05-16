@@ -1,1 +1,19 @@
 // Mixins in here
+.test() {
+    border: 1px solid red;
+}
+
+.custom-btn(@font-color: @white, @bg-color: @eastern-blue) {
+    color: @font-color;
+    background-color: @bg-color;
+    width: 85%;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lighten(@bg-color, 10%);
+    }
+}
