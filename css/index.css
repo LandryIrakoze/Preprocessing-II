@@ -168,6 +168,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 800px) {
+  .container {
+    width: 80%;
+  }
+}
 @media (max-width: 500px) {
   .container {
     width: 80%;
@@ -182,6 +187,21 @@ img {
   width: 800px;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 800px) {
+  .nav-bar .nav-container h1 {
+    margin: 0 30px 0 60px;
+    text-align: center;
+    font-size: 3rem;
+  }
+}
+@media (max-width: 800px) {
+  .nav-bar .nav-container {
+    margin: 20px;
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+  }
 }
 @media (max-width: 500px) {
   .nav-bar .nav-container {
@@ -206,6 +226,11 @@ img {
 @media (max-width: 500px) {
   .nav-bar .header-nav a {
     margin: 0px 15px 0px 15px;
+  }
+}
+@media (max-width: 800px) {
+  .nav-bar .header-nav a {
+    font-size: 1.6rem;
   }
 }
 .footer {

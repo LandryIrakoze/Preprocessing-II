@@ -10,11 +10,26 @@
         display: flex;
         justify-content: space-between;
 
+        h1 {
+            @media @tablet {
+                margin: 0 30px 0 60px;
+                text-align: center;
+                font-size: 3rem;
+            }
+        }
+
+        @media @tablet {
+            margin: 20px;
+            width: 80%;
+            text-align: center;
+            justify-content: center;
+        }
+
         @media @mobile { 
             width: 80%; 
             flex-direction: column;
             text-align: center;
-        }
+        }        
     }
 
     .header-nav {
@@ -33,6 +48,10 @@
 
             @media @mobile {
                 margin: 0px 15px 0px 15px;
+            }
+
+            @media @tablet {
+                font-size: 1.6rem;
             }
         }
     }
