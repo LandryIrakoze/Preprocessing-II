@@ -76,6 +76,10 @@
     display: flex;
     justify-content: space-between;
 
+    @media @tablet {
+      flex-direction: column;
+    }
+
     @media @mobile {
       flex-direction: column;
     }
@@ -83,6 +87,8 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @tablet{ width: 100%; }
 
       @media @mobile { width: 100%; }
 
